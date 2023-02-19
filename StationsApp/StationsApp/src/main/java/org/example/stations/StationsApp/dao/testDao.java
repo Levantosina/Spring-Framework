@@ -24,9 +24,9 @@ public class testDao {
     }
 
 
-    @Transactional(readOnly = true)
-    public Set<stationMay> testStations(){
-        Session session=entityManager.unwrap(Session.class);
+  //  @Transactional(readOnly = true)
+  //  public Set<stationMay> testStations(){
+//        Session session=entityManager.unwrap(Session.class);
 //
 //        List<stationMay> stationMays=session.createQuery("select p from  stationMay p",stationMay.class).getResultList();
 //
@@ -34,11 +34,11 @@ public class testDao {
 //            System.out.println(stationMay.getDepartureStationName());
  //       }
 
-        Set<stationMay> stationMays=new HashSet<stationMay>(session.createQuery("select p from stationMay p").getResultList());
+  //      Set<stationMay> stationMays=new HashSet<stationMay>(session.createQuery("select p from stationMay p").getResultList());
 
-        for(stationMay stationMay:stationMays)
-            System.out.println(stationMay.getDepartureStationName());
-        return stationMays;
-    }
+    //    for(stationMay stationMay:stationMays)
+    //        System.out.println(stationMay.getDepartureStationName());
+     //   return stationMays;
+  //  }
 
 }
