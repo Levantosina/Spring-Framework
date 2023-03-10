@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>New person</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/stations}" th:object="${stationMay}">
+  <label for="departureStationName">Departure station name: </label>
+  <input type="text" th:field="*{departureStationName}" id="departureStationName"/>
+  <div style="color:red" th:if="${#fields.hasErrors('departureStationName')}" th:errors="*{departureStationName}">Full Name Error</div>
+  <br/>
+  <label for="returnStationName">Return station name: </label>
+  <input type="text" th:field="*{returnStationName}" id="returnStationName"/>
+  <div style="color:red" th:if="${#fields.hasErrors('returnStationName')}" th:errors="*{returnStationName}">Full Name Error</div>
+  <br/>
+  <label for="coveredDistance">Covered distance: </label>
+  <input type="text" th:field="*{coveredDistance}" id="coveredDistance"/>
+  <div style="color:red" th:if="${#fields.hasErrors('coveredDistance')}" th:errors="*{coveredDistance}">Full Name Error</div>
+  <br/>
+  <label for="duration">D
+    uration: </label>
+  <input type="text" th:field="*{duration}" id="duration"/>
+  <div style="color:red" th:if="${#fields.hasErrors('duration')}" th:errors="*{duration}">Full Name Error</div>
+  <br/>
+  <input type="submit" value="Create!"/>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+org\example\stations\StationsApp\controllers\StationsController.class
+org\example\stations\StationsApp\StationsAppApplication.class
+org\example\stations\StationsApp\services\StationsService.class
+org\example\stations\StationsApp\models\test.class
+org\example\stations\StationsApp\repositories\StationProjection.class
+org\example\stations\StationsApp\repositories\StationsRepository.class
+org\example\stations\StationsApp\models\stationMay.class
+org\example\stations\StationsApp\dao\testDao.class
