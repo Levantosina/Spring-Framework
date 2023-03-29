@@ -69,7 +69,7 @@ public class PeopleService {
            //check if the book is expired
             person.get().getBooks().forEach(book -> {
                 long diffInMillies = Math.abs(book.getTakenAt().getTime() - new Date().getTime());
-                // 864000000 mill.sec = 10 суток
+                // 864000000 mill.sec = 10 days
                 if (diffInMillies > 864000000)
                     book.setExpired(true); // book is expired
             });
